@@ -6,18 +6,23 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="pdfMemo試作" />
-    <meta name="theme-color" content="#5c5c5c" />
-    <title>pdfMemo ペン試作</title>
-    <script type="module" crossorigin src="./assets/index-D151Wopx.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dq-rOnTf.css">
+    <meta name="apple-mobile-web-app-title" content="pdfMemo" />
+    <meta name="theme-color" content="#000000" />
+    <title>pdfMemo</title>
+    <script type="module" crossorigin src="./assets/index-G9N2aCRz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BGYpoFND.css">
   </head>
   <body>
     <div id="app">
-      <header class="toolbar" id="toolbar"></header>
-      <main id="stage" data-paper="grid"></main>
-      <aside id="panel" class="panel" hidden></aside>
-      <div id="hud" class="hud" hidden></div>
+      <section id="library" class="screen library"></section>
+      <section id="viewer" class="screen viewer" hidden>
+        <header id="vbar" class="vbar"></header>
+        <header id="toolbar" class="toolbar" hidden></header>
+        <main id="stage" data-paper="none"></main>
+        <footer id="pagebar" class="pagebar"></footer>
+        <aside id="panel" class="panel" hidden></aside>
+        <div id="hud" class="hud" hidden></div>
+      </section>
     </div>
   </body>
 </html>
